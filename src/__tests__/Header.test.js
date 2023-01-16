@@ -13,3 +13,15 @@ test("renders a <h1> with the blog name", () => {
   expect(h1).toBeInTheDocument();
   expect(h1.tagName).toBe("H1");
 });
+
+import React from "react";
+
+function Header({Tittle}){
+
+    return (
+      <header>
+        <h1>{Tittle}</h1>
+      </header>
+    )
+  }
+  // export default Header;
